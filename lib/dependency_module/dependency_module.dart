@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 import '../base_sub_module.dart';
 
 ///CRUCIAL IMPORTANCE THIS CLASS MUST BE INITIALIZED ONLY ONCE
@@ -11,5 +13,6 @@ abstract class BaseDependencyModule {
   }
 
   /// override this method to initialize you sub_modules
+  @protected
   List<ISubModule> getSubModules();
 }
