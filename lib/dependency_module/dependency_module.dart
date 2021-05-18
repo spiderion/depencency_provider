@@ -16,4 +16,6 @@ abstract class BaseDependencyModule {
   /// do not call this method from outside the subclass
   @protected
   List<ISubModule> createSubmodules();
+
+  List<ISubModule> getReadySubModules() => _subModules;
 }
