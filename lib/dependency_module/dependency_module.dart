@@ -8,11 +8,12 @@ abstract class BaseDependencyModule {
   final List<ISubModule> _subModules = [];
 
   BaseDependencyModule() {
-    _subModules.addAll(getSubModules());
+    _subModules.addAll(createSubmodules());
     _subModules.forEach((subModule) => subModule.init(_subModules));
   }
 
-  /// override this method to initialize you sub_modules
+  /// override this method to initialize your sub_modules
+  /// do not call this method from outside the subclass
   @protected
-  List<ISubModule> getSubModules();
+  List<ISubModule> createSubmodules();
 }
