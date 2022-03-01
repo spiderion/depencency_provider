@@ -1,8 +1,7 @@
 name: dependency_provider
 description: Dependency Provider package.
 version: 0.0.1
-author:
-homepage: Dependency provider
+homepage: https://github.com/spiderion/dependency_provider.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
